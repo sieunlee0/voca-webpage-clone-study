@@ -1,7 +1,17 @@
-const World = function () {
+// const World = function () {
+//     return(
+//         <h2>World</h2>
+//     );
+// }
+
+// const World = ()=> {
+//     return(
+//         <h2>World</h2>
+//     );
+// }
+
+export default function World() {
     return(
         <h2>World</h2>
     );
-}
-
-export default World;
+};
