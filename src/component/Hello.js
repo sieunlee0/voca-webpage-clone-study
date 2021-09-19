@@ -7,7 +7,7 @@ import World from './World';
 
 export default function Hello() {
     return (
-        <div>
+        <div className="box1">
             <h2>Hello</h2>
             <World />
             <World />

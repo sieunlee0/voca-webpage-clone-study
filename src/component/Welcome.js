@@ -14,6 +14,8 @@
 
 export default function Welcome() {
     return(
-        <h2>Welcome</h2>
+        <div className="box2">
+            <h2>Welcome</h2>
+        </div>
     );
 }

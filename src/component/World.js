@@ -12,6 +12,8 @@
 
 export default function World() {
     return(
-        <h3>World</h3>
+        <div className="box3">
+            <h3>World</h3>
+        </div> 
     );
 };
