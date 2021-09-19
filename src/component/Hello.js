@@ -3,9 +3,13 @@
 // };
 
 // export default Hello;
+import World from './component/World';
 
 export default function Hello() {
     return (
-        <p>Hello</p>
+        <div>
+            <h2>Hello</h2>
+            <World />
+        </div>
     );
 }
