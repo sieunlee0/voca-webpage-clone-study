@@ -5,5 +5,7 @@
 // export default Hello;
 
 export default function Hello() {
-    <p>Hello</p>
+    return (
+        <p>Hello</p>
+    );
 }
