@@ -9,14 +9,29 @@ body {
 }
 
 .header {
-  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
 }
 
+.header h1 {
+  width: fit-content;
+}
+
+
+.menu {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px 20px;
+  margin: 0;
+}
 
 .menu button {
-  width: fit-content;
-  padding: 5px 5px;
+  width: 130px;
+  height:50px;
+  font-size: 20px;
+  margin: 0px 10px;
 }
 
 

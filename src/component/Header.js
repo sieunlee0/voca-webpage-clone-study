@@ -16,14 +16,14 @@ export default function Header() {
                 <a href="/">Study English word</a>
             </h1>
 
-            <div className="menu">
+            <span className="menu">
                 <button href="x#" className="link">
                     Add word
                 </button>
                 <button href="#x" className="link">
                     Add Day 
                 </button>
-            </div>
+            </span>
         </div>
     );
 };
