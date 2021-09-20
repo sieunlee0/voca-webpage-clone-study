@@ -17,13 +17,13 @@ export default function Header() {
             </h1>
 
             <div className="menu">
-                <a href="x#" className="link">
+                <button href="x#" className="link">
                     Add word
-                </a>
-                <a href="#x" className="link">
+                </button>
+                <button href="#x" className="link">
                     Add Day 
-                </a>
+                </button>
             </div>
         </div>
-    )
+    );
 };

@@ -8,6 +8,18 @@ body {
   font-size: 20px;
 }
 
+.header {
+  width: fit-content;
+  padding-left: 20px;
+}
+
+
+.menu button {
+  width: fit-content;
+  padding: 5px 5px;
+}
+
+
 ol,
 ul {
   margin: 0;
