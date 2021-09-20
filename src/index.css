@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 code {
@@ -12,13 +20,3 @@ code {
     monospace;
 }
 
-.box1 {
-  background-color: antiquewhite;
-}
-.box2 {
-  background-color:black;
-  color: aliceblue;
-}
-.box3 {
-  background-color: burlywood;
-}
