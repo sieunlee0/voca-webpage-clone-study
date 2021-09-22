@@ -23,7 +23,7 @@ export default function Daylist() {
 // {dummy.days.map(days =><li key={days.id}>Day {days.day}</li>)}
 // {dummy.days.map((days) =><li key={days.id}>Day {days.day}</li>)}
 // {dummy.days.map(days =>(<li key={days.id}>Day {days.day}</li>))}
-// ((days) =>(<li key={days.id}>Day {days.day}</li>))}  
+// {dummy.days.map((days) =>(<li key={days.id}>Day {days.day}</li>))}  
 
 // Don't!
 // {dummy.days.map(function days() {<li key={days.id}>Day {days.day}</li>})}
