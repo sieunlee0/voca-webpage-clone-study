@@ -5,7 +5,7 @@ export default function Daylist() {
     console.log(dummy);
     return(
         <ul className="list_day">
-            {dummy.days.map(days =><li key={days.id}>Day {days.day}</li>)}    
+            {dummy.days.map(days => <li key={days.id}>Day {days.day}</li>)}    
         </ul>
     );
 }
@@ -22,6 +22,8 @@ export default function Daylist() {
 // Do it!
 // {dummy.days.map(days =><li key={days.id}>Day {days.day}</li>)}
 // {dummy.days.map((days) =><li key={days.id}>Day {days.day}</li>)}
+// {dummy.days.map(days =>(<li key={days.id}>Day {days.day}</li>))}
+// ((days) =>(<li key={days.id}>Day {days.day}</li>))}  
 
 // Don't!
 // {dummy.days.map(function days() {<li key={days.id}>Day {days.day}</li>})}
