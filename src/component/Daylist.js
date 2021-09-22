@@ -5,11 +5,7 @@ export default function Daylist() {
     console.log(dummy);
     return(
         <ul className="list_day">
-            {dummy.days.map(day =>(
-                <li key={day.id}>
-                    Day {day.day}
-                </li>
-            ))}    
+            {dummy.days.map(day =>(<li key={day.id}>Day {day.day}</li>))}    
         </ul>
     );
 }
