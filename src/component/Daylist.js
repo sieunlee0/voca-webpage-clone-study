@@ -5,7 +5,7 @@ export default function Daylist() {
     console.log(dummy);
     return(
         <ul className="list_day">
-            {dummy.days.map((days) =><li key={days.id}>Day {days.day}</li>)}    
+            {dummy.days.map(days =><li key={days.id}>Day {days.day}</li>)}    
         </ul>
     );
 }
@@ -18,3 +18,5 @@ export default function Daylist() {
 // key는 반복되는 요소에 고유한 값을 넣어주는 것. 순서가 일정하지 않은 경우에 사용한다.
 // HTML에서 id나 class를 넣어주는 이유와 비슷하다고 볼 수 있을 것 같다.
 
+// {dummy.days.map(days =><li key={days.id}>Day {days.day}</li>)}
+// {dummy.days.map((days) =><li key={days.id}>Day {days.day}</li>)}
