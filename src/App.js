@@ -1,7 +1,8 @@
+import React from 'react';
 import './App.css';
-import Header from './component/Header';
-import Daylist from './component/Daylist';
-import Day from './component/Day';
+import {Header} from 'react';
+import {Daylist} from 'react';
+import {Day} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 /*모듈을 가져올 때는 from의 내용을 파일의 주소로 쓰지 않아도 되나보다.
@@ -22,8 +23,12 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Daylist />
+          <Route path="/">
+            <Daylist />
+          </Route>
+          <Route path="/day">
           <Day />
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>
@@ -32,3 +37,4 @@ function App() {
 
 export default App;
 // Switch 내부는 url을 따라 각각 다른 페이지를 보여주게 되고 외부는 모든 페이지에 공통으로 보여지게 된다.
+// Route의 path에 /만 넣어 놓으면 무조건 첫 페이지로 가게 된다.
