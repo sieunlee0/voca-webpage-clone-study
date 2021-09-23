@@ -27,4 +27,5 @@ export default function Daylist() {
 
 // Don't!
 // {dummy.days.map(function days() {<li key={days.id}>Day {days.day}</li>})}
+// {dummy.days.map(function(days) => <li key={days.id}>Day {days.day}</li>)}    
 // map function uses callbakFunction, but don't write "function"
