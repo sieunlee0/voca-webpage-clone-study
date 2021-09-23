@@ -21,12 +21,14 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Switch></Switch>
-        <Daylist />
-        <Day />
+        <Switch>
+          <Daylist />
+          <Day />
+        </Switch>
       </div>
     </BrowserRouter>
   );
 }
 
 export default App;
+// Switch 내부는 url을 따라 각각 다른 페이지를 보여주게 되고 외부는 모든 페이지에 공통으로 보여지게 된다.
