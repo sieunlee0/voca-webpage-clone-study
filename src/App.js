@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-
+        <Switch></Switch>
         <Daylist />
         <Day />
       </div>
