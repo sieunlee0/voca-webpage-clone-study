@@ -1,3 +1,4 @@
+import React from "react";
 import dummy from "../db/data.json"
 // 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 썼을까?
 

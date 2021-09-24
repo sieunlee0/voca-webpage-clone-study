@@ -10,6 +10,7 @@
 //     ...
 // }
 
+import React from 'react';
 import dummy from '../db/data.json'
 
 export default function Day() {
