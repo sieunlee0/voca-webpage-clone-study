@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Header} from 'react';
-import {Daylist} from 'react';
-import {Day} from 'react';
+import React, {Header} from 'react';
+import React, {Daylist} from 'react';
+import React, {Day} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 /*모듈을 가져올 때는 from의 내용을 파일의 주소로 쓰지 않아도 되나보다.
