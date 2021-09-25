@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Daylist />
           </Route>
           <Route path="/day">
@@ -36,5 +36,13 @@ function App() {
 }
 
 export default App;
-// Switch 내부는 url을 따라 각각 다른 페이지를 보여주게 되고 외부는 모든 페이지에 공통으로 보여지게 된다.
-// Route의 path에 /만 넣어 놓으면 무조건 첫 페이지로 가게 된다.
+/*route에 대한 공부 내용
+routing(라우팅)이란 주소에 따라 각기 다른 페이지와 그에 따른 내요을 보여주게 하는 것.
+
+Switch 내부는 url을 따라 각각 다른 페이지를 보여주게 되고 외부는 모든 페이지에 공통으로 보여지게 된다.
+
+Route의 path에 /만 넣어 놓으면 무조건 첫 페이지로 가게 된다.
+
+exact는 정확하게 그 주소에 일치할 경우에 페이지가 보여지도록 해분다.
+위의 '/day'에는 '/'가 포함 되어 있기 때문에 주소가 '/'로 끝나더라도 '/day'의 내용이 보여진다.
+그래서 주소가 '/'로 끝나는 경우에는 그에 대한 내용만 보여지도록 exact를 써주는 것이다.*/
