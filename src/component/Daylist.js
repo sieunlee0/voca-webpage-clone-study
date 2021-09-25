@@ -9,7 +9,7 @@ export default function Daylist() {
         <ul className="list_day">
             {dummy.days.map(day => 
             <li key={day.id}>
-                <Link to="/day">Day {day.day} </Link>
+                <Link to={`/day/${day.day}`}>Day {day.day} </Link>
             </li>
             )}    
         </ul>
@@ -46,3 +46,6 @@ HTML에서 id나 class를 넣어주는 이유와 비슷하다고 볼 수 있을 
 {dummy.days.map(function(days) => <li key={days.id}>Day {days.day}</li>)}    
 map function uses callbakFunction, but don't write "function"
 */
+
+/*<Link to={`/day/${day.day}`}>Day {day.day} </Link>에서 ``부분을 {}로 감싼것에 주의할 것!
+개인적으로는 `/day/${day.day}`자체를 하나의 변수로써 처리한 것이 아닌가 생각함. 한 덩어리로 만들어 버린 느낌*/
