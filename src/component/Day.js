@@ -17,7 +17,8 @@ function Day() {
 import React from 'react';
 import dummy from '../db/data.json'
 import { useParams } from 'react-router-dom';
-// useParams는 무엇일까?
+/* Q: useParams는 무엇일까?
+A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
 
 export default function Day() {
 
@@ -29,7 +30,9 @@ export default function Day() {
     = const { day } = useParame();
     */
 
-    const wordList = dummy.words.filter(word => (word.day === day));
+    const wordList = dummy.words.filter(word => word.day === Number(day));
+    /* useParams가 주소를 가져오는데 주소는 string으로 되어 있다. 
+    word.day는 number이기 때문에 useParams로 가져온 주소에 있는 day를 number로 바꿔 주어야 한다.*/
 
     return(
         <body>
