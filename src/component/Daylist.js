@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import dummy from "../db/data.json"
 // 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 썼을까?
 
@@ -6,7 +7,11 @@ export default function Daylist() {
     console.log(dummy);
     return(
         <ul className="list_day">
-            {dummy.days.map(days => <li key={days.id}>Day {days.day}</li>)}    
+            {dummy.days.map(day => 
+            <li key={day.id}>
+                <Link to="/day">Day {day.day} </Link>
+            </li>
+            )}    
         </ul>
     );
 }
