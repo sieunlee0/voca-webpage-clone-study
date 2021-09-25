@@ -1,14 +1,18 @@
-// const Day = function (){
-//     ...
-// }
+/*컴포넌트를 작성하는 다양한 방법들
+const Day = function (){
+    ...
+}
 
-// const Day = ()=>{
-//     ...
-// }
+const Day = ()=>{
+    ...
+}
 
-// function Day() {
-//     ...
-// }
+function Day() {
+    ...
+}
+
+위의 방법들은 따로 export를 해줘야 한다.
+*/
 
 import React from 'react';
 import dummy from '../db/data.json'
@@ -19,7 +23,7 @@ export default function Day() {
     const wordList = dummy.words.filter(word => (word.day === day));
 
     return(
-        <>
+        <body>
             <h2>Day {day} </h2>
             <table>
                 <tbody>
@@ -31,8 +35,8 @@ export default function Day() {
                 ))}
                 </tbody>
             </table>
-        </>
+        </body>
     );
 }
 
-//<table>, <tbody>, <tt>, <td>에 대해 공부해야 할 듯 20
+//<table>, <tbody>, <tt>, <td>, <body> 태그에 대해 공부해야 할 듯 
