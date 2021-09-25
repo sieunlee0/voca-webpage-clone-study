@@ -31,3 +31,5 @@ export default function Day() {
         </table>
     );
 }
+
+//<table>, <tbody>, <tt>, <td>에 대해 공부해야 할 듯 20
