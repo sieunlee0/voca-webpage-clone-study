@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/">
             <Daylist />
           </Route>
-          <Route path="/day">
+          <Route path="/day/:day">
           <Day />
           </Route>
         </Switch>

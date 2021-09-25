@@ -16,6 +16,8 @@ function Day() {
 
 import React from 'react';
 import dummy from '../db/data.json'
+import { useParams } from 'react-router-dom';
+// useParams는 무엇일까?
 
 export default function Day() {
 
