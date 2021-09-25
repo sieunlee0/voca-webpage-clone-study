@@ -11,9 +11,18 @@ export default function Daylist() {
     );
 }
 
-/*map은 배열을 받아 새로운 배열을 반환함. 
-Q: dummy.days.day로 받아외도 될 것 같은데 꼭 map을 써야 하는 이유가 있을까?
-A: map을 사용하는 이유는 반복되는 작업을 피하기 위해서다. 만약 dummy.days.day로 각 요소를 반아오려 했다면 li태그가 4개로 늘어났을 것이다.
+/*map함수에 대한 공부
+map은 배열을 받아 새로운 배열을 반환함. 
+Q: dummy.days.day로 받아와도 될 것 같은데 꼭 map을 써야 하는 이유가 있을까?
+A: map을 사용하는 이유는 반복되는 작업을 피하기 위해서다. 만약 dummy.days.day로 각 요소를 반아오려 했다면 필요한 코드가 늘어났을 것.
+아마도 이렇게...
+const id = dummy.day.id;
+const day = dummy.days.day
+<li key=>{id=1}>Day{day=1}</li>
+<li key=>{id=2}>Day{day=2}</li>
+<li key=>{id=3}>Day{day=3}</li>
+<li key=>{id=4}>Day{day=4}</li>
+...
 */
 
 /*key란?
