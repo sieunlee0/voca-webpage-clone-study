@@ -21,8 +21,13 @@ import { useParams } from 'react-router-dom';
 
 export default function Day() {
 
-    const a = useParams();
+    const day = useParams().day;
+    /* 같은 코드 다른 형식
+    const a =useParame();
     const day = a.day;
+    = const day = useParams().day;
+    */
+
     const wordList = dummy.words.filter(word => (word.day === day));
 
     return(
