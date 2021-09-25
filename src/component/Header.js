@@ -19,13 +19,14 @@ function Header() {
 위의 방법들은 따로 export를 해줘야 한다.
 */
 
+import {Link} from "react-router-dom";
 import React from "react";
 
 export default function Header() {
     return(
         <div className=" header">
             <h1>
-                <a href="/">Study English word</a>
+                <Link to="/">Study English word</Link>
             </h1>
 
             <span className="menu">
