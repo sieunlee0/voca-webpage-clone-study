@@ -23,7 +23,7 @@ export default function Day() {
 
     const day = useParams().day;
     /* 같은 코드 다른 형식
-    const a =useParame();
+    const a = useParame();
     const day = a.day;
     = const day = useParams().day;
     */
