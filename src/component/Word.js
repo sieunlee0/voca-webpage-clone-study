@@ -7,7 +7,8 @@ export default function Word({ word }) {
     A: 위의 state를 만든 이유는 버튼을 눌렀을 때 단어의 뜻이 보이게 하려는 것이다.
     따라서, 처음에는 단어의 뜻이 보이지 말아야 하므로 안 보이게 false로 해놓은 것이다.
     */
-    
+   const [isDone, setisDone] = useState()
+;    
     function toggleShow() {
         setIsShow(!isShow)
     }
