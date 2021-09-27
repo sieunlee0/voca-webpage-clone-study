@@ -20,8 +20,9 @@ export default function Word({ word }) {
             <td>{word.eng}</td>
             <td>{isShow && word.kor}</td>
             <td>
-                <button onClick={ toggleShow }>뜻 보기</button>
-                <button className="btn_del">단어 삭제</button>
+                <button onClick={ toggleShow }>뜻 {isShow ? "숨기기" : "보기" }</button>
+                {/* 위의 {isShow ? "숨기기" : "보기" }에서 ?는 무슨 의미지?  */}
+                <button className="btn_del">삭제</button>
             </td>
         </tr>
     );
