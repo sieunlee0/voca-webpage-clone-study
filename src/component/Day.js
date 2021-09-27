@@ -39,12 +39,19 @@ export default function Day() {
             <h2>Day {day} </h2>
             <table>
                 <tbody>
-                {wordList.map(word => (
-                    <tr key={word.id}>
-                        <td>{word.eng}</td>
-                        <td>{word.kor}</td>
-                    </tr>
-                ))}
+                    {wordList.map(word => (
+                        <tr key={word.id}>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>{word.eng}</td>
+                            <td>{word.kor}</td>
+                            <td>
+                                <button>뜻 보기</button>
+                                <button>단어 삭제</button>
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </body>
