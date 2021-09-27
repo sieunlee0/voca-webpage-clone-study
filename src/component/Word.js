@@ -42,3 +42,11 @@ export default function Word({ word }) {
         </tr>
     );
 }
+
+/*
+REST API
+create : post
+read : get
+update : put
+delete : delete
+*/ 
