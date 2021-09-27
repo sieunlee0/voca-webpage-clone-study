@@ -7,16 +7,25 @@ export default function Word({ word }) {
     A: 위의 state를 만든 이유는 버튼을 눌렀을 때 단어의 뜻이 보이게 하려는 것이다.
     따라서, 처음에는 단어의 뜻이 보이지 말아야 하므로 안 보이게 false로 해놓은 것이다.
     */
-   const [isDone, setisDone] = useState()
-;    
+    const [isDone, setisDone] = useState(word.isDone);
+
+
     function toggleShow() {
         setIsShow(!isShow)
     }
 
+    function toggleDone() {
+        setisDone(!isDone);
+    }
+
     return(
-        <tr className={word.isDone ? "off" : "on"}>
+        <tr className={isDone ? "off" : "on"}>
             <td>
-                <input type="checkbox" checked={word.isDone} />
+                <input 
+                    type="checkbox" 
+                    checked={isDone} 
+                    onChange={ toggleDone }
+                />
             </td>
             <td>{word.eng}</td>
             <td>{isShow && word.kor}</td>
