@@ -48,7 +48,7 @@ export default function Day() {
                             <td>{word.kor}</td>
                             <td>
                                 <button>뜻 보기</button>
-                                <button>단어 삭제</button>
+                                <button className="btn_del">단어 삭제</button>
                             </td>
                         </tr>
                     ))}
