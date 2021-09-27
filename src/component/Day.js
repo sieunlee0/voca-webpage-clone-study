@@ -19,6 +19,8 @@ import dummy from '../db/data.json'
 import { useParams } from 'react-router-dom';
 /* Q: useParams는 무엇일까?
 A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
+import Word from './Word';
+/*얘는 왜 './componet/Word'라고 안 쓸까? 오류가 났다*/
 
 export default function Day() {
 
@@ -40,17 +42,7 @@ export default function Day() {
             <table>
                 <tbody>
                     {wordList.map(word => (
-                        <tr key={word.id}>
-                            <td>
-                                <input type="checkbox" />
-                            </td>
-                            <td>{word.eng}</td>
-                            <td>{word.kor}</td>
-                            <td>
-                                <button>뜻 보기</button>
-                                <button className="btn_del">단어 삭제</button>
-                            </td>
-                        </tr>
+                        <Word word={ word } key={ word.id }/>
                     ))}
                 </tbody>
             </table>
