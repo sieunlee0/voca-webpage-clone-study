@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Word({ word }) {
     const [isShow, setIsShow] = useState(false);
@@ -12,7 +13,7 @@ export default function Word({ word }) {
                 <input type="checkbox" />
             </td>
             <td>{word.eng}</td>
-            <td>{word.kor}</td>
+            <td>{isShow && word.kor}</td>
             <td>
                 <button>뜻 보기</button>
                 <button className="btn_del">단어 삭제</button>
