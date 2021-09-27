@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Word({ word }) {
     return(
-        <tr key={word.id}>
+        <tr>
             <td>
                 <input type="checkbox" />
             </td>
