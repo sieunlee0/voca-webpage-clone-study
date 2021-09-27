@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Word({ word }) {
-    const [isShow, setIsShow] = useState();
+    const [isShow, setIsShow] = useState(false);
     return(
         <tr>
             <td>
