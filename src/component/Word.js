@@ -13,9 +13,9 @@ export default function Word({ word }) {
     }
 
     return(
-        <tr>
+        <tr className={word.isDone ? "off" : "on"}>
             <td>
-                <input type="checkbox" />
+                <input type="checkbox" checked={word.isDone} />
             </td>
             <td>{word.eng}</td>
             <td>{isShow && word.kor}</td>
