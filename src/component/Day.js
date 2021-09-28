@@ -15,6 +15,7 @@ function Day() {
 */
 
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 /* Q: useParams는 무엇일까?
 A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
