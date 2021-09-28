@@ -34,13 +34,24 @@ export default function Day() {
     // const wordList = dummy.words.filter(word => word.day === Number(day));
     /* useParams가 주소를 가져오는데 주소는 string으로 되어 있다. 
     word.day는 number이기 때문에 useParams로 가져온 주소에 있는 day를 number로 바꿔 주어야 한다.*/
+    const [words, setWords] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/words")
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            setWords(data);
+        });
+    }, []);
 
     return(
         <body>
             <h2>Day {day} </h2>
             <table>
                 <tbody>
-                    {wordList.map(word => (
+                    {words.map(word => (
                         <Word word={ word } key={ word.id }/>
                     ))}
                 </tbody>
