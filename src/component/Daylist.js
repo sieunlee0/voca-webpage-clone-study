@@ -7,6 +7,8 @@ import {Link} from "react-router-dom";
 
 export default function Daylist() {
     const [days, setDays] = useState([]);
+    const [count, setCount] = useState(0);
+
     return(
         <ul className="list_day">
             {days.map(day => 
