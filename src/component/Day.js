@@ -38,7 +38,7 @@ export default function Day() {
     const [words, setWords] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/words?day=1")
+        fetch(`http://localhost:3001/words?day=${day}`)
         .then(res => {
             return res.json();
         })
