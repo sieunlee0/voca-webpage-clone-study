@@ -30,7 +30,7 @@ function App() {
             <Daylist />
           </Route>
           <Route path="/day/:day">
-          <Day />
+            <Day />
           </Route>
           <Route>
             <EmptyPage />
