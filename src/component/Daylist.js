@@ -8,6 +8,10 @@ import {Link} from "react-router-dom";
 export default function Daylist() {
     const [days, setDays] = useState([]);
 
+    useEffect(() => {
+        fetch('http://localhost:3000/days')
+    }, [])
+
     return(
         <ul className="list_day">
             {days.map(day => 
