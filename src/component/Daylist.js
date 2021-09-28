@@ -1,13 +1,15 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
-import dummy from "../db/data.json"
-// 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 썼을까?
+
+// import dummy from "../db/data.json"
+// 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 쓸까?
 
 export default function Daylist() {
-    console.log(dummy);
+    const [days, setDays] = useState([]);
     return(
         <ul className="list_day">
-            {dummy.days.map(day => 
+            {days.map(day => 
             <li key={day.id}>
                 <Link to={`/day/${day.day}`}>Day {day.day} </Link>
             </li>
