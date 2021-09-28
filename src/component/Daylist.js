@@ -10,12 +10,12 @@ export default function Daylist() {
 
     useEffect(() => {
         fetch("http://localhost:3001/days")
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setDays(data);
-        });
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                setDays(data);
+            });
     }, []);
     // 만약 fetch()를 useEffect 없이 사용한다면 어떻게 될까? 
 
