@@ -9,7 +9,7 @@ export default function Daylist() {
     const [days, setDays] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/days')
+        fetch('http://localhost:3001/day')
         .then(res => {
             return res.json();
         })
