@@ -42,10 +42,19 @@ export default function Word({ props }) {
         if(window.confirm('Do you really want to delete the word?')) {
             fetch(`http://localhost:3001/words/${word.id}`, {
                 method : 'DELETE',
+            }).then(res => {
+                if(res.ok){
+                    setWord({id:0});
+                }
             });
         }
     }
 
+    if(word.id === 0) {
+        return null;
+    }
+
+    
     return(
         <tr className={isDone ? "off" : "on"}>
             <td>
