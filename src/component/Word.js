@@ -15,7 +15,8 @@ export default function Word({ word }) {
     }
 
     function toggleDone() {
-        setisDone(!isDone);
+        // setisDone(!isDone);
+        fetch(`http://localhost:3001/words/${word.id}`);
     }
 
     return(
