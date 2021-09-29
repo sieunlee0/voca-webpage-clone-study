@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Word({ props }) {
-    const [word, setWord] = useState(props.word);
-    /*export default function Word({ word : w }) {
-    const [word, setWord] = useState(w);처럼 word를 w에 할당하고 w를 property로 쓸 수도 있다*/
+export default function Word({ word : w }) {
+    const [word, setWord] = useState(w);
+    /*export default function Word({ props }) {
+    const [word, setWord] = useState(props.word);처럼도 쓸 있는데 에러가 떴다
+    데이터를 처음부터 word라는 이름으로 내보내고 있어서 props라는 이름으로 받으려고 하면 찾지 못하는 것 같다*/
     const [isShow, setIsShow] = useState(false);
     /*Q: 초기값을 false로 주는 이유가 무엇일까?
     A: 위의 state를 만든 이유는 버튼을 눌렀을 때 단어의 뜻이 보이게 하려는 것이다.
@@ -54,7 +55,7 @@ export default function Word({ props }) {
         return null;
     }
 
-    
+
     return(
         <tr className={isDone ? "off" : "on"}>
             <td>
