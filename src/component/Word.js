@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export default function Word({ props }) {
     const [word, setWord] = useState(props.word);
+    /*export default function Word({ word : w }) {
+    const [word, setWord] = useState(w);처럼 word를 w에 할당하고 w를 property로 쓸 수도 있다*/
     const [isShow, setIsShow] = useState(false);
     /*Q: 초기값을 false로 주는 이유가 무엇일까?
     A: 위의 state를 만든 이유는 버튼을 눌렀을 때 단어의 뜻이 보이게 하려는 것이다.
