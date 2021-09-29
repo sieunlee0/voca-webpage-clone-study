@@ -16,7 +16,22 @@ export default function Word({ word }) {
 
     function toggleDone() {
         // setisDone(!isDone);
-        fetch(`http://localhost:3001/words/${word.id}`);
+        fetch(`http://localhost:3001/words/${word.id}`, {
+            method : 'PUT',
+            headers : {
+                'Content-Type': 'application/json',
+            },
+            body : JSON.stringify({
+                ...word,
+                isDone :!isDone
+            }),
+        })
+        .then(res => {
+            if(res.ok) {
+                setisDone(!isDone);
+            }
+        });
+
     }
 
     return(
