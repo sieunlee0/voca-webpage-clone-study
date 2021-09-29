@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-export default function useFetch() {
+
+export default function useFetch(url) {
     const [words, setWords] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/words?day=${day}`)
+        fetch(url)
         .then(res => {
             return res.json();
         })
