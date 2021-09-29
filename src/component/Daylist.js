@@ -1,11 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
+import useFetch from "../hooks/useFetch";
 
 // import dummy from "../db/data.json"
 // 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 쓸까?
 
 export default function Daylist() {
+    useFetch("http://localhost:3001/days");
     // const [days, setDays] = useState([]);
 
     // useEffect(() => {
