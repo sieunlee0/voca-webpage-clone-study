@@ -36,7 +36,12 @@ export default function Word({ word }) {
 
 
     function del() {
-
+        if(window.confirm('Do you really want to delete the word?')) {
+            fetch(`http://localhost:3001/words/${word.id}`, {
+                method : 'DELETE',
+                
+            })
+        }
     }
 
     return(
