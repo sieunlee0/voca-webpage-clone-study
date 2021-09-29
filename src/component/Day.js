@@ -20,6 +20,7 @@ import { useParams } from 'react-router-dom';
 A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
 import Word from './Word';
 /*얘는 왜 './componet/Word'라고 안 쓸까? 오류가 났다*/
+import useFetch from "../hooks/useFetch";
 
 export default function Day() {
 
