@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Word({ word }) {
+export default function Word({ props }) {
+    const [word, setWord] = useState(props.word);
     const [isShow, setIsShow] = useState(false);
     /*Q: 초기값을 false로 주는 이유가 무엇일까?
     A: 위의 state를 만든 이유는 버튼을 눌렀을 때 단어의 뜻이 보이게 하려는 것이다.
@@ -39,8 +40,7 @@ export default function Word({ word }) {
         if(window.confirm('Do you really want to delete the word?')) {
             fetch(`http://localhost:3001/words/${word.id}`, {
                 method : 'DELETE',
-                
-            })
+            });
         }
     }
 
