@@ -6,18 +6,18 @@ import {Link} from "react-router-dom";
 // 왜 얘는 파일 주소를 쓸때 점이 하나가 아니라 두 개를 쓸까?
 
 export default function Daylist() {
-    const [days, setDays] = useState([]);
+    // const [days, setDays] = useState([]);
 
-    useEffect(() => {
-        fetch("http://localhost:3001/days")
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setDays(data);
-        });
-    }, []);
-    //] 만약 fetch()를 useEffect 없이 사용한다면 어떻게 될까? 
+    // useEffect(() => {
+    //     fetch("http://localhost:3001/days")
+    //     .then(res => {
+    //         return res.json();
+    //     })
+    //     .then(data => {
+    //         setDays(data);
+    //     });
+    // }, []);
+    // 만약 fetch()를 useEffect 없이 사용한다면 어떻게 될까? 
 
     return(
         <ul className="list_day">
