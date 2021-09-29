@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function useFetch(url) {
-    const [words, setWords] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         fetch(url)
@@ -9,7 +9,9 @@ export default function useFetch(url) {
             return res.json();
         })
         .then(data => {
-            setWords(data);
+            setData(data);
         });
-    }, [day]);
+    }, [url]);
+
+    return data;
 }
