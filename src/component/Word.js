@@ -34,6 +34,11 @@ export default function Word({ word }) {
 
     }
 
+
+    function del() {
+
+    }
+
     return(
         <tr className={isDone ? "off" : "on"}>
             <td>
@@ -53,7 +58,7 @@ export default function Word({ word }) {
                 클릭 이벤트가 발생할 때, true가 돠고 먼저 쓰인 "숨기기" 보인다.
                 다시 클릭하면 false가 되고 "보기"로 바뀐다.
                  */}
-                <button className="btn_del">삭제</button>
+                <button onClick={ del } className="btn_del">삭제</button>
             </td>
         </tr>
     );
