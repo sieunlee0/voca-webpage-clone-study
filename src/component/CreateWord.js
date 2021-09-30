@@ -5,11 +5,11 @@ export default function CreateWord() {
         <from>
             <div className="input_area">
                 <label>eng</label>
-                <iput type="text" placeholder="computer" />
+                <input type="text" placeholder="computer" />
             </div>
             <div className="input_area">
                 <label>kor</label>
-                <iput type="text" placeholder="컴퓨터" />
+                <input type="text" placeholder="컴퓨터" />
             </div>
             <div className="input_area">
                 <select>
