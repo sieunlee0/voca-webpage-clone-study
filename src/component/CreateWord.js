@@ -13,6 +13,7 @@ export default function CreateWord() {
         console.log(engRef.current.value);
         console.log(korRef.current.value);
         console.log(dayRef.current.value);
+        // value는 input에 입력된 값을 얻을 수 있고, current속성은 그 해당요소에 접근할 수 있다.
     }
 
     const engRef = useRef(null); //useRef는 돔에 점근할 수 있게 해준다.
@@ -20,7 +21,7 @@ export default function CreateWord() {
     const dayRef = useRef(null);
 
     return (
-        <from onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
             <div className="input_area">
                 <label>eng</label>
                 <input type="text" placeholder="computer" ref={engRef} />
@@ -40,6 +41,6 @@ export default function CreateWord() {
                 </select>
             </div>
             <button>save</button>
-        </from>
+        </form>
     )
 }
