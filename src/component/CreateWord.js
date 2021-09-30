@@ -14,6 +14,24 @@ export default function CreateWord() {
         console.log(korRef.current.value);
         console.log(dayRef.current.value);
         // value는 input에 입력된 값을 얻을 수 있고, current속성은 그 해당요소에 접근할 수 있다.
+
+        fetch(`http://localhost:3001/words/`, {
+            method : 'POST',
+            headers : {
+                'Content-Type': 'application/json',
+            },
+            body : JSON.stringify({
+                day : dayRef.current.value,
+                eng : engRef.current.value,
+                kor : korRef.current.value,
+                isDone : false
+            }),
+        })
+        .then(res => {
+            if(res.ok) {
+                setisDone(!isDone);
+            }
+        });
     }
 
     const engRef = useRef(null); //useRef는 돔에 점근할 수 있게 해준다.
