@@ -32,6 +32,8 @@ export default function CreateWord() {
         .then(res => {
             if(res.ok) {
                 alert("It generated!^_^")
+                history.push(`/day/${dayRef.current.value}`)
+                // Link to처럼 a태그를 사용하지 않고 페이지를 이동시키고 싶을 때 사용할 수 있다
             }
         });
     }
