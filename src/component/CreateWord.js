@@ -1,6 +1,7 @@
 import React from "react";
 import useFetch from "../hooks/useFetch";
 import { useRef } from "react";
+// usefetch는 왜 useState나 useEffect같은 import방식이 아닐까?
  
 export default function CreateWord() {
 
@@ -8,6 +9,10 @@ export default function CreateWord() {
 
     function onSubmit(e) {
         e.preventDefault();
+
+        console.log(engRef.current.value);
+        console.log(korRef.current.value);
+        console.log(dayRef.current.value);
     }
 
     const engRef = useRef(null); //useRef는 돔에 점근할 수 있게 해준다.
