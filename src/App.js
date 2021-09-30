@@ -6,6 +6,7 @@ import Day from './component/Day';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import EmptyPage from './component/EmptyPage';
 import CreateWord from './component/CreateWord';
+import CreateDay from './component/CreateDay';
 
 // 모듈을 가져올 때는 from의 내용을 파일의 주소로 쓰지 않아도 되나보다.
 // package.json 파일에 "dependencies" 중 "react-router-dom" 이 있는지 확인해 본다. 설치가 되어있는지 확인할 수 있는 방법이 있었다!
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/create_word">
             <CreateWord />
+          </Route>
+          <Route path="/create_day">
+            <CreateDay />
           </Route>
           <Route>
             <EmptyPage />

@@ -33,9 +33,9 @@ export default function Header() {
                 <Link to="create_word" className="link">
                     Add word
                 </Link>
-                <button href="#x" className="link">
+                <Link to="create_day" className="link">
                     Add Day 
-                </button>
+                </Link>
             </span>
         </div>
     );
