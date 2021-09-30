@@ -1,6 +1,10 @@
 import React from "react";
+import useFetch from "../hooks/useFetch";
  
 export default function CreateWord() {
+
+    const days = useFetch();
+
     return (
         <from>
             <div className="input_area">
