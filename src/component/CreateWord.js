@@ -12,6 +12,7 @@ export default function CreateWord() {
                 <input type="text" placeholder="컴퓨터" />
             </div>
             <div className="input_area">
+                <label>Day</label>
                 <select>
                     <option>1</option>
                     <option>2</option>
