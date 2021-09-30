@@ -23,7 +23,7 @@ export default function CreateDay() {
         .then(res => {
             if(res.ok) {
                 alert("It generated!^_^")
-                history.push(`/ `)
+                history.push("/")
             }
         });
     }
@@ -31,7 +31,7 @@ export default function CreateDay() {
     return(
         <div>
             <h3>Number of Day : {days.length}days</h3>
-            <button>Add New Day</button>
+            <button onClick={addDay}>Add New Day</button>
         </div>
     );
 }
