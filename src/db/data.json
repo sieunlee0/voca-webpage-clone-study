@@ -66,6 +66,13 @@
       "kor": "집",
       "isDone": false,
       "id": 8
+    },
+    {
+      "day": "1",
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 9
     }
   ]
 }
