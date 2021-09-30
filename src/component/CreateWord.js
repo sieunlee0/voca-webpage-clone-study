@@ -1,11 +1,13 @@
 import React from "react";
 import useFetch from "../hooks/useFetch";
 import { useRef } from "react";
+import { useHistory } from "react-router";
 // usefetch는 왜 useState나 useEffect같은 import방식이 아닐까?
  
 export default function CreateWord() {
 
     const days = useFetch("http://localhost:3001/days");
+    const history = useHistory();
 
     function onSubmit(e) {
         e.preventDefault();
