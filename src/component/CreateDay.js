@@ -8,30 +8,30 @@ export default function CreateDay() {
     const days = useFetch("http://localhost:3001/days");
     const history = useHistory();
 
-    function onSubmit(e) {
+    function addDay(e) {
         e.preventDefault();
 
-        fetch(`http://localhost:3001/words/`, {
+        fetch(`http://localhost:3001/days/`, {
             method : 'POST',
             headers : {
                 'Content-Type': 'application/json',
             },
             body : JSON.stringify({
-                day : dayRef.current.value,
-                eng : engRef.current.value,
-                kor : korRef.current.value,
-                isDone : false
+                day : days.length + 1
             }),
         })
         .then(res => {
             if(res.ok) {
                 alert("It generated!^_^")
-                history.push(`/day/${dayRef.current.value}`)
+                history.push(`/ `)
             }
         });
     }
 
     return(
-        <div></div>
-    )
+        <div>
+            <h3>Number of Day : {days.length}days</h3>
+            <button>Add New Day</button>
+        </div>
+    );
 }
