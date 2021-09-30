@@ -30,9 +30,9 @@ export default function Header() {
             </h1>
 
             <span className="menu">
-                <button href="x#" className="link">
+                <Link to="create_word" className="link">
                     Add word
-                </button>
+                </Link>
                 <button href="#x" className="link">
                     Add Day 
                 </button>
