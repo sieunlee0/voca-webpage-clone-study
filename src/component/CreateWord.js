@@ -10,9 +10,9 @@ export default function CreateWord() {
     function onSubmit(e) {
         e.preventDefault();
 
-        console.log(engRef.current.value);
-        console.log(korRef.current.value);
-        console.log(dayRef.current.value);
+        // console.log(engRef.current.value);
+        // console.log(korRef.current.value);
+        // console.log(dayRef.current.value);
         // value는 input에 입력된 값을 얻을 수 있고, current속성은 그 해당요소에 접근할 수 있다.
 
         fetch(`http://localhost:3001/words/`, {
@@ -29,7 +29,7 @@ export default function CreateWord() {
         })
         .then(res => {
             if(res.ok) {
-                setisDone(!isDone);
+                alert("It generated!^_^")
             }
         });
     }
