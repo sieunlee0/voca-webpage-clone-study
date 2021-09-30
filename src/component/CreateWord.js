@@ -5,8 +5,16 @@ export default function CreateWord() {
 
     const days = useFetch("http://localhost:3001/days");
 
+    function onSubmit(e) {
+        e.preventDefault();
+    }
+
+    const engRef = useRef(null); //useRef는 돔에 점근할 수 있게 해준다.
+    const korRef = useRef(null);
+    const dayRef = useRef(null);
+
     return (
-        <from>
+        <from onSubmit={onSubmit}>
             <div className="input_area">
                 <label>eng</label>
                 <input type="text" placeholder="computer" />
