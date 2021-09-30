@@ -17,15 +17,15 @@ export default function CreateWord() {
         <from onSubmit={onSubmit}>
             <div className="input_area">
                 <label>eng</label>
-                <input type="text" placeholder="computer" />
+                <input type="text" placeholder="computer" ref={engRef} />
             </div>
             <div className="input_area">
                 <label>kor</label>
-                <input type="text" placeholder="컴퓨터" />
+                <input type="text" placeholder="컴퓨터" ref={korRef} />
             </div>
             <div className="input_area">
                 <label>Day</label>
-                <select>
+                <select ref={dayRef} >
                     {days.map(day => (
                         <option key= {day.id} value={day.day}>
                             {day.day}
