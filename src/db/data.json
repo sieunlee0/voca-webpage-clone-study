@@ -81,6 +81,13 @@
       "kor": "쥐",
       "isDone": false,
       "id": 9
+    },
+    {
+      "day": "6",
+      "eng": "cat",
+      "kor": "고양이",
+      "isDone": false,
+      "id": 10
     }
   ]
 }
