@@ -3,24 +3,28 @@
     width: 95%;
 }
 
-.mainBody{
-    width: 95%;
-    display: flex;
-    justify-content: center;
+
+#dayNumber{
+    right: 800px;
 }
 
-.wordTable{
+#wordTable{
     width: 1000px;
 }
 
-.changeButtonBody{
+.mainBody{
+   left: 1000px
+}
+
+
+.changePage{
     display: flex;
     justify-content:space-between;
     width: 1000px;
 }
-.leftPage{
+/* .leftPage{
     right: 200px;
 }
 .rightPage{
     left: 200px;
-}
+} */

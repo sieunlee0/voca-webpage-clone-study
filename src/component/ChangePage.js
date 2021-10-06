@@ -7,7 +7,7 @@ export default function ChangePage() {
 
 
     return(
-        <div>
+        <div className="chagePage">
             <button className="leftPage" onClick= { nextPage }> ◀ </button>
             <button className="rightPage" onClick= { nextPage }> ▶ </button>
         </div>
