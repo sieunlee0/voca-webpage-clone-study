@@ -21,7 +21,7 @@ A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
 import Word from './Word';
 /*얘는 왜 './componet/Word'라고 안 쓸까? 오류가 났다*/
 import useFetch from "../hooks/useFetch";
-import CreateWord from './CreateWord';
+import ChangePage from './ChangPage';
 
 
 
@@ -40,8 +40,6 @@ export default function Day() {
     word.day는 number이기 때문에 useParams로 가져온 주소에 있는 day를 number로 바꿔 주어야 한다.*/
     const words = useFetch(`http://localhost:3001/words?day=${day}`);
 
-    function nextPage(){}
-
     return(
         <body id="wordBox" >
             <h2 id="dayNumber">Day {day} </h2>
@@ -52,10 +50,7 @@ export default function Day() {
                     ))}
                 </tbody>
             </table>
-            <div className="chagePage">
-                <button id="leftPage" onClick= { nextPage }> ◀ </button>
-                <button id="rightPage" onClick= { nextPage }> ▶ </button>
-            </div>
+            <ChangePage />
         </body>
     );
 }
