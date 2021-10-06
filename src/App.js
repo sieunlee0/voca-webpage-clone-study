@@ -36,7 +36,7 @@ function App() {
               <Day />
             </Route>
             <Route>
-              <ChangePage />
+              <ChangePage path="/day/:day" />
             </Route>
             <Route path="/create_word">
               <CreateWord />
