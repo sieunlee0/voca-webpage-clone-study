@@ -1,6 +1,5 @@
 import React from "react";
 import useFetch from "../hooks/useFetch";
-import { useRef } from "react";
 import { useHistory } from "react-router";
 
 export default function CreateDay() {
