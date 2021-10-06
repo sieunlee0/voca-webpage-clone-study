@@ -43,7 +43,7 @@ export default function Day() {
 
     return(
         <body>
-            <h2>Day {day} </h2>
+            <h2 className="dayNumber">Day {day} </h2>
             <table>
                 <tbody>
                     {words.map(word => (

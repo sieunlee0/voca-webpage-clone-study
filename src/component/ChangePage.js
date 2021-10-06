@@ -7,9 +7,9 @@ export default function ChangePage() {
 
 
     return(
-        <div>
-            <h2 className="changePage" onClick= { nextPage }> ◀ </h2>
-            <h2 className="changePage" onClick= { nextPage }> ▶ </h2>
+        <div className="changePage">
+            <button className="leftPage" onClick= { nextPage }> ◀ </button>
+            <button className="rightPage" onClick= { nextPage }> ▶ </button>
         </div>
     );
 }

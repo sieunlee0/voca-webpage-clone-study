@@ -28,7 +28,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Switch>
+        <div className="mainBody">
+          <Switch>
           <Route exact path="/">
             <Daylist />
           </Route>
@@ -48,6 +49,7 @@ function App() {
             <EmptyPage />
           </Route>
         </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );

@@ -1,1 +1,11 @@
 
+.mainBody{
+    display: flex;
+    align-items: center;
+}
+
+.changePage{
+    display: flex;
+    justify-content:space-between;
+    width: 1000px;
+}
