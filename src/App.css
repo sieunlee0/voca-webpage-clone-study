@@ -1,7 +1,16 @@
+.App{
+    margin: 30px;
+    width: 90%;
+}
 
 .mainBody{
+    width: 1300px;
     display: flex;
     align-items: center;
+}
+
+.wordTable{
+    width: 1000px;
 }
 
 .changePage{
