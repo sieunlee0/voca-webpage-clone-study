@@ -17,8 +17,13 @@
 }
 
 .chagePage{
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    margin: 10px 350px;
+    width: 1600px;
+    margin: 10px 340px;
+}
+
+#leftPage{
+    
+}
+#rightPage{
+    margin-left: 900px;
 }
