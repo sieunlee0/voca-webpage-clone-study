@@ -28,28 +28,28 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <div className="mainBody">
-          <Switch>
-          <Route exact path="/">
-            <Daylist />
-          </Route>
-          <Route path="/day/:day">
-            <Day />
-          </Route>
+        <Switch>
+          <div className="mainBody">
+            <Route exact path="/">
+              <Daylist />
+            </Route>
+            <Route path="/day/:day">
+              <Day />
+            </Route>
+            <Route path="/create_word">
+              <CreateWord />
+            </Route>
+            <Route path="/create_day">
+              <CreateDay />
+            </Route>
+          </div>
           <Route>
             <ChangePage />
-          </Route>
-          <Route path="/create_word">
-            <CreateWord />
-          </Route>
-          <Route path="/create_day">
-            <CreateDay />
           </Route>
           <Route>
             <EmptyPage />
           </Route>
         </Switch>
-        </div>
       </div>
     </BrowserRouter>
   );
