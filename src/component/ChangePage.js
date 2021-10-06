@@ -6,6 +6,7 @@ export default function ChangePage() {
     return(
         <div>
             <h2 className="changePage" onClick= {}> ◀ </h2>
+            <h2 className="changePage" onClick= {}> ▶ </h2>
         </div>
     );
 }
