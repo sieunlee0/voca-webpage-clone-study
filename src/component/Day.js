@@ -17,7 +17,7 @@ function Day() {
 import React from 'react';
 import { useParams } from 'react-router-dom';
 /* Q: useParams는 무엇일까?
-A: router의 path에 적은 주소를 가져오는 hook인 듯 하다. */
+A:useParams는 URL 인자들의 key/value(키/값) 짝들의 객체를 반환한다. */
 import Word from './Word';
 /*얘는 왜 './componet/Word'라고 안 쓸까? 오류가 났다*/
 import useFetch from "../hooks/useFetch";
