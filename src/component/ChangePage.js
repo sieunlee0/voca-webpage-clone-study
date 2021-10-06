@@ -3,13 +3,13 @@ import React from "react";
 // import useFetch from "../hooks/useFetch";
 
 export default function ChangePage() {
-    
+    function nextPage(){}
 
 
     return(
         <div>
-            <h2 className="changePage" onClick= {}> ◀ </h2>
-            <h2 className="changePage" onClick= {}> ▶ </h2>
+            <h2 className="changePage" onClick= { nextPage }> ◀ </h2>
+            <h2 className="changePage" onClick= { nextPage }> ▶ </h2>
         </div>
     );
 }
