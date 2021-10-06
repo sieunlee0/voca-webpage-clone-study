@@ -29,12 +29,14 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <div className="mainBody">
             <Route exact path="/">
               <Daylist />
             </Route>
             <Route path="/day/:day">
               <Day />
+            </Route>
+            <Route>
+              <ChangePage />
             </Route>
             <Route path="/create_word">
               <CreateWord />
@@ -42,13 +44,9 @@ function App() {
             <Route path="/create_day">
               <CreateDay />
             </Route>
-          </div>
-          <Route>
-            <ChangePage />
-          </Route>
-          <Route>
-            <EmptyPage />
-          </Route>
+            <Route>
+              <EmptyPage />
+            </Route>
         </Switch>
       </div>
     </BrowserRouter>

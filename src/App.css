@@ -13,8 +13,14 @@
     width: 1000px;
 }
 
-.changePage{
+.changeButtonBody{
     display: flex;
     justify-content:space-between;
     width: 1000px;
+}
+.leftPage{
+    right: 200px;
+}
+.rightPage{
+    left: 200px;
 }
