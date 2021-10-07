@@ -11,7 +11,8 @@ export default function ChangePage({ days: d }) {
     const history = useHistory();
 
     function change(){
-        const newDay = setDays(days+1);
+        const changeDay = setDays(days+1);
+        const newDay = JSON.stringify(changeDay);
         history.push(`/day/${newDay}`);
     }
     
