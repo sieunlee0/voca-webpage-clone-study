@@ -7,15 +7,16 @@ import { useHistory } from "react-router";
 
 
 export default function ChangePage() {
-    // const {day} = useParams();
+    const {day} = useParams();
     // const day = days.day;
     const history = useHistory();
-    const daysData = useFetch(`http://localhost:3001/days`);
-    const day = daysData.day;
+    const daysData = useFetch(`http://localhost:3001/days?day=${day}`);
+    // const day = daysData.day;
 
     function dayPlus() {
-        const dayPlus = { day } + 1
-        history.push(`/day/${dayPlus}`);    
+        const dayPlus = Number(day) + 1
+        // history.push(`/day/${dayPlus}`);
+        console.log(dayPlus);
     }
     
     return(
