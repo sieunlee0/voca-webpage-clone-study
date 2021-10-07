@@ -35,14 +35,14 @@ function App() {
             <Route path="/day/:day">
               <Day />
             </Route>
-            <Route>
-              <ChangePage path="/day/:day" />
-            </Route>
             <Route path="/create_word">
               <CreateWord />
             </Route>
             <Route path="/create_day">
               <CreateDay />
+            </Route>
+            <Route>
+              <ChangePage/>
             </Route>
             <Route>
               <EmptyPage />
