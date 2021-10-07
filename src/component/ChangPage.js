@@ -11,14 +11,12 @@ export default function ChangePage() {
         const plusDay = Number(day)+1;
         const nextDay = JSON.stringify(plusDay);
         history.push(`/day/${nextDay}`);
-        console.log(nextDay);
     }
 
     function previousPage(){
         const minusDay = Number(day)-1;
         const preDay = JSON.stringify(minusDay);
         history.push(`/day/${preDay}`);
-        console.log(preDay);
     }
     
 
