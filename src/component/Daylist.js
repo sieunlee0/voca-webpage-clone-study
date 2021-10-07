@@ -31,6 +31,8 @@ const day = dummy.days.day
 <li key=>{id=3}>Day{day=3}</li>
 <li key=>{id=4}>Day{day=4}</li>
 ...
+
+추가로 바로 Link to를 해주고 있으므로 일일이 링크를 적어줄 필요도 없다.
 */
 
 /*key란?

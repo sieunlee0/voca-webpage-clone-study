@@ -8,6 +8,10 @@ import { useState } from "react";
 
 export default function ChangePage({ days: d }) {
     const [ days, setDays ] = useState(d);
+
+    function change(){
+        
+    }
     
 
     
