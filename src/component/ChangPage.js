@@ -7,8 +7,8 @@ import { useHistory } from "react-router";
 
 
 export default function ChangePage() {
-    const {day} = useParams();
-    const days = useFetch(`http://localhost:3001/days?day=${ day }`);
+    // const {day} = useParams();
+    const days = useFetch(`http://localhost:3001/days`);
     // const day = days.day;
     // const history = useHistory();
     
