@@ -9,14 +9,19 @@ import { useHistory } from "react-router";
 export default function ChangePage() {
     // const {day} = useParams();
     // const day = days.day;
-    // const history = useHistory();
+    const history = useHistory();
     const daysData = useFetch(`http://localhost:3001/days`);
     const day = daysData.day;
+
+    function dayPlus() {
+        const dayPlus = { day } + 1
+        history.push(`/day/${dayPlus}`);    
+    }
     
     return(
         <div className="chagePage">
-            <Link id="leftPage"> ◀ </Link>
-            <Link id="rightPage"> ▶ </Link>
+            <button id="leftPage"> ◀ </button>
+            <button id="rightPage"> ▶ </button>
         </div>
     );
 }
