@@ -39,6 +39,7 @@ export default function Day() {
     /* useParams가 주소를 가져오는데 주소는 string으로 되어 있다. 
     word.day는 number이기 때문에 useParams로 가져온 주소에 있는 day를 number로 바꿔 주어야 한다.*/
     const words = useFetch(`http://localhost:3001/words?day=${day}`);
+    const days = useFetch(`http://localhost:3001/days?day=${day}`);
 
     return(
         <body id="wordBox" >
@@ -50,7 +51,7 @@ export default function Day() {
                     ))}
                 </tbody>
             </table>
-            <ChangePage />
+            <ChangePage days={ days }/>
         </body>
     );
 }
