@@ -14,7 +14,7 @@ export default function ChangePage({ days: d }) {
     return(
         <div className="chagePage">
             <button id="leftPage"> ◀ </button>
-            <button id="rightPage" onClick={}> ▶ </button>
+            <button id="rightPage"> ▶ </button>
         </div>
     );
 }
