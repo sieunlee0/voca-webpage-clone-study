@@ -4,10 +4,12 @@ import {Link} from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { useParams } from 'react-router-dom';
 import { useHistory } from "react-router";
+import { useState } from "react";
 
 
 export default function ChangePage() {
     const {day} = useParams();
+    const [days, setDays] = useState();
     // const day = days.day;
     const history = useHistory();
     const daysData = useFetch(`http://localhost:3001/days?day=${day}`);
