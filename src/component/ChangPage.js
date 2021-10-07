@@ -7,10 +7,9 @@ import { useHistory } from "react-router";
 import { useState } from "react";
 
 
-export default function ChangePage() {
-    const {day} = useParams();
-    const [days, setDays] = useState();
-    // const day = days.day;
+export default function ChangePage({ day: d }) {
+    // const { day } = useParams();
+    const [ days, setDays ] = useState(d);
     const history = useHistory();
     const daysData = useFetch(`http://localhost:3001/days?day=${day}`);
     // const day = daysData.day;
