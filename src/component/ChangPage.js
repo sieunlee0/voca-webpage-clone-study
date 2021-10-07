@@ -15,7 +15,7 @@ export default function ChangePage() {
         history.push(`/day/${nextDay}`);
 
         if(day > days.length-1 ){
-            history.push(`/error`);
+            history.push("/error");
         }
     }
 
@@ -25,9 +25,8 @@ export default function ChangePage() {
         const preDay = JSON.stringify(minusDay);
         history.push(`/day/${preDay}`);
 
-        if(minusDay < 1 ){
-            history.push(`/error`);
-        }
+        if(day < days[0])
+            history.push("/error")
     }
     
 
