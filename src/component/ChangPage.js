@@ -8,9 +8,10 @@ import { useHistory } from "react-router";
 
 export default function ChangePage() {
     // const {day} = useParams();
-    const days = useFetch(`http://localhost:3001/days`);
     // const day = days.day;
     // const history = useHistory();
+    const daysData = useFetch(`http://localhost:3001/days`);
+    const day = daysData.day;
     
     return(
         <div className="chagePage">
