@@ -11,24 +11,31 @@ export default function ChangePage() {
     // const [ curDay, setCurDay ] = useState(day);
     const history = useHistory();
 
-    function change(){
+    function nextPage(){
         // setCurDay(()=>
         //     Number(curDay)+1
         // );
         // const changeDay = setDay(day+1);
         // const newDay = JSON.stringify(curDay);
         const plusDay = Number(day)+1;
-        const newDay = JSON.stringify(plusDay);
-        history.push(`/day/${newDay}`);
-        console.log(newDay);
+        const nextDay = JSON.stringify(plusDay);
+        history.push(`/day/${nextDay}`);
+        console.log(nextDay);
+    }
+
+    function previousPage(){
+        const minusDay = Number(day)-1;
+        const preDay = JSON.stringify(minusDay);
+        history.push(`/day/${preDay}`);
+        console.log(preDay);
     }
     
 
     
     return(
         <div className="chagePage">
-            <button id="leftPage"> ◀ </button>
-            <button id="rightPage" onClick={change}> ▶ </button>
+            <button id="leftPage" onClick={previousPage}> ◀ </button>
+            <button id="rightPage" onClick={nextPage}> ▶ </button>
         </div>
     );
 }
