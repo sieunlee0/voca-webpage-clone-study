@@ -7,7 +7,7 @@ import { useHistory } from "react-router";
 import { useState } from "react";
 
 
-export default function ChangePage({ day: d }) {
+export default function ChangePage({ days: d }) {
     // const { day } = useParams();
     const [ days, setDays ] = useState(d);
     const history = useHistory();
