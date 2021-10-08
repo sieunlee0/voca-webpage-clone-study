@@ -23,7 +23,9 @@
 
 #leftPage{
     margin-bottom: 300px;
+    background-color: coral;
 }
 #rightPage{
     margin-left: 684px;
+    background-color: coral;
 }
