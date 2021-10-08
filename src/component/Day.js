@@ -53,9 +53,7 @@ export default function Day() {
             </table>
             <ChangePage/>
         </body>
-    );
-
-    
+    );   
 }
 
 //<table>, <tbody>, <tt>, <td>, <body> 태그에 대해 공부해야 할 듯 
