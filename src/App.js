@@ -47,6 +47,8 @@ function App() {
       </div>
     </BrowserRouter>
   );
+
+  
 }
 
 export default App;
