@@ -25,7 +25,7 @@ export default function ChangePage() {
         const preDay = JSON.stringify(minusDay);
         history.push(`/day/${preDay}`);
 
-        if(day < days[0])
+        if(minusDay < 1)
             history.push("/error")
     }
     
