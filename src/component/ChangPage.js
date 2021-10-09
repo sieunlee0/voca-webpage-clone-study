@@ -29,7 +29,6 @@ export default function ChangePage() {
             history.push("/error")
     }
     
-
     
     return(
         <div className="chagePage">
