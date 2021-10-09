@@ -51,6 +51,7 @@ export default function CreateWord() {
     const korRef = useRef(null);
     const dayRef = useRef(null);
 
+    
     return (
         <form onSubmit={onSubmit}>
             <div className="input_area">
