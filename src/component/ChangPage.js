@@ -19,7 +19,6 @@ export default function ChangePage() {
         }
     }
 
-
     function previousPage(){
         const minusDay = Number(day)-1;
         const preDay = JSON.stringify(minusDay);
@@ -29,7 +28,7 @@ export default function ChangePage() {
             history.push("/error")
     }
     
-    
+
     return(
         <div className="chagePage">
             <button id="leftPage" onClick={previousPage}> ◀ </button>
