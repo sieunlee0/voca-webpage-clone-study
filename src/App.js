@@ -49,7 +49,6 @@ export default function App() {
   );
 }
 
-export default App;
 /*route에 대한 공부 내용
 Q
 BrouwserRouter, Router, Switch가 무엇일까?
