@@ -2,7 +2,6 @@
 the below part was used twice times each two components.
 so I made this part as a hook*/
 
-
 import { useState, useEffect } from 'react';
 
 export default function useFetch(url) {
