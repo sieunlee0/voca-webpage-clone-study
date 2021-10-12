@@ -18,6 +18,5 @@ export default function useFetch(url) {
     }, [url]);
     // 만약 fetch()를 useEffect 없이 사용한다면 어떻게 될까? 
 
-    
     return data;
 }
