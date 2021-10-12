@@ -15,7 +15,7 @@ export default function CreateWord() {
         // console.log(engRef.current.value);
         // console.log(korRef.current.value);
         // console.log(dayRef.current.value);
-        // value는 input에 입력된 값을 얻을 수 있고, current속성은 그 해당요소에 접근할 수 있다.
+        
 
         fetch(`http://localhost:3001/words/`, {
             method : 'POST',
@@ -26,6 +26,7 @@ export default function CreateWord() {
                 day : dayRef.current.value,
                 eng : engRef.current.value,
                 kor : korRef.current.value,
+                // value는 input에 입력된 값을 얻을 수 있고, current속성은 그 해당요소에 접근할 수 있다.
                 isDone : false
             }),
         })
