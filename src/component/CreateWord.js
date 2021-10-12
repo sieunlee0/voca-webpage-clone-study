@@ -12,8 +12,6 @@ export default function CreateWord() {
     function onSubmit(e) {
         e.preventDefault();
 
-   
-
         fetch(`http://localhost:3001/words/`, {
             method : 'POST',
             headers : {
