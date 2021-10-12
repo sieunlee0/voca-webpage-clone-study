@@ -22,7 +22,7 @@ A
 */
 
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <div className="App">
