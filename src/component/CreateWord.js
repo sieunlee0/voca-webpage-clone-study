@@ -12,10 +12,7 @@ export default function CreateWord() {
     function onSubmit(e) {
         e.preventDefault();
 
-        // console.log(engRef.current.value);
-        // console.log(korRef.current.value);
-        // console.log(dayRef.current.value);
-        
+   
 
         fetch(`http://localhost:3001/words/`, {
             method : 'POST',
