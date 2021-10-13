@@ -34,7 +34,6 @@ export default function Word({ word : w }) {
                 setisDone(!isDone);
             }
         });
-
     }
 
     function del() {
