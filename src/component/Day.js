@@ -24,7 +24,6 @@ import useFetch from "../hooks/useFetch";
 import ChangePage from './ChangPage';
 
 
-
 export default function Day() {
 
     const { day } = useParams();
