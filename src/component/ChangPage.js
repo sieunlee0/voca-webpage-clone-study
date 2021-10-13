@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useHistory } from "react-router";
 import useFetch from "../hooks/useFetch";
 
-
 export default function ChangePage() {
     const { day } = useParams();
     const history = useHistory();
