@@ -70,5 +70,5 @@ export default function CreateWord() {
             </div>
             <button>save</button>
         </form>
-    )
+    );
 }
