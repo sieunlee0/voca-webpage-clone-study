@@ -10,12 +10,10 @@ import CreateDay from './component/CreateDay' ;
 
 // 모듈을 가져올 때는 from의 내용을 파일의 주소로 쓰지 않아도 되나보다.
 // package.json 파일에 "dependencies" 중 "react-router-dom" 이 있는지 확인해 본다. 설치가 되어있는지 확인할 수 있는 방법이 있었다!
-
 /*Q&A
 Q
 {}안에 있는 것을 변수처럼 가져오는 것으로 알고 있다. 
 그래서 모듈의 내용 중에서 몇가지만 가져와서 쓰기 위해 쓸 내용을 {}에 넣어 가져오는 것이 아닌가 한다. 맞나?
-
 A
 맞음. react-router-dom에는 brouserRouter, route, switch에 대한 기능이 담겨 있고 각 기능에는 기능에 따른 정보들이 담겨 있을 것임.
 각 기능들이 컴포넌트로써 가져와지는 것으로 볼 수 있겠음 
