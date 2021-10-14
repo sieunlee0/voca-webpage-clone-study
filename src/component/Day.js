@@ -53,5 +53,4 @@ export default function Day() {
         </body>
     );   
 }
-
 //<table>, <tbody>, <tt>, <td>, <body> 태그에 대해 공부해야 할 듯 
