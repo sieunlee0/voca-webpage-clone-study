@@ -1,16 +1,13 @@
 /*컴포넌트를 작성하는 다양한 방법들
-const Day = function (){
+1. const Day = function (){
     ...
-}
-
-const Day = ()=>{
+   }
+2. const Day = ()=>{
     ...
-}
-
-function Day() {
+   }
+3. function Day() {
     ...
-}
-
+   }
 위의 방법들은 따로 export를 해줘야 한다.
 */
 
