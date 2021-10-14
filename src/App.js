@@ -19,7 +19,6 @@ A
 각 기능들이 컴포넌트로써 가져와지는 것으로 볼 수 있겠음 
 */
 
-
 export default function App() {
   return (
     <BrowserRouter>
