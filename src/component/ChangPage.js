@@ -26,6 +26,8 @@ export default function ChangePage() {
         if(minusDay < 1)
             history.push("/error")
     }
+    // if문이 함수 밖에 있어도 똑같이 작동할까?
+    // if문을 함수 안에 작성하는 것과 바깥에 작성하는 것은 무슨 차이일까?
     
 
     return(
