@@ -52,7 +52,6 @@ export default function Word({ word : w }) {
         return null;
     }
 
-
     return(
         <tr className={isDone ? "off" : "on"}>
             <td>
