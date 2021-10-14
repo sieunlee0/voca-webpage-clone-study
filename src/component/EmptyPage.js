@@ -10,7 +10,6 @@ export default function EmptyPage() {
         </body>
     );
 }
-
 /*
 <body>태그가 사실은 강의에서는 <> 이렇게 그저 비어 있는 태그 였는데,
 내꺼에서는 오류로 떠서 일단 body태그로 대체 했다.
